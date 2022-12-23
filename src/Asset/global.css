@@ -5,7 +5,8 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
-  display: flex;
+  display: block;
+  margin-top:150px;
   justify-content: center;
   align-items: center;
 }
