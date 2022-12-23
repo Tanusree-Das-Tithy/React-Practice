@@ -5,7 +5,7 @@ import {Clock} from './components/Clock';
 import MainComponent from './components/form';
 function App() {
   return <div className="Apps">
-  
+  < Clock/>
   <MainComponent/>;
   </div>
   
