@@ -47,7 +47,7 @@ const SecondComponent = () => {
     </div>
   )
 }
-
+/*
 export default class MainComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -84,6 +84,30 @@ export default class MainComponent extends React.Component {
     )
   }
 }
+*/
+
+export const MainComponent = () => {
+  const [display, setDisplay] = useState(true);
+
+  if (display) {
+    return (
+      <div>
+        <button className='select' onClick={() => setDisplay(false)}><img src="/Pencil.jpg" style={{height:"15px",width:"15px"}}></img></button>
+          <FirstComponent />
+       
+        
+        </div>
+    );
+  } else {
+    return (
+      <div>
+        <button className='select'onClick={() => setDisplay(true)}><img src="/Pencil.jpg" style={{height:"15px",width:"15px"}}></img></button>
+        <SecondComponent />
+      </div>
+    );
+  }
+};
+
  
 
  
